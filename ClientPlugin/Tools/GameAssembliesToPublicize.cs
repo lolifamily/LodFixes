@@ -1,0 +1,5 @@
+﻿using System.Runtime.CompilerServices;
+
+[assembly: IgnoresAccessChecksTo("Sandbox.Game")]
+[assembly: IgnoresAccessChecksTo("VRage.Game")]
+[assembly: IgnoresAccessChecksTo("VRage.Render11")]

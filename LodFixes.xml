@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<PluginData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GitHubPlugin">
+
+    <!-- The ID of your plugin, never change this -->
+    <Id>02101984-CA54-4C0D-A323-34AB8142C748</Id>
+
+    <!-- GitHub repository ID -->
+    <RepoId>lolifamily/LodFixes</RepoId>
+
+    <!-- The name of your plugin that will appear in the plugin list -->
+    <FriendlyName>LOD Fixes</FriendlyName>
+
+    <!-- The author name that you want to appear in the plugin list -->
+    <Author>lolifamily</Author>
+
+    <!-- Optional tooltip for the plugin in the plugin list -->
+    <Tooltip>Fixes LOD and terrain bugs, including artifacts on huge planets.</Tooltip>
+
+    <!-- Optional plugin description. If omitted, this will be the same as the Tooltip. 1000 characters max. -->
+    <Description>Fixes LOD and terrain bugs of the game, most of them on by default:
+
+        - Edited terrain showing as holes in the distance
+        - Model quality not changing the LOD distances of all models
+        - Grid edges and projections fading between LODs too fast
+        - Model rendering getting slower with every world load
+        - Planet tree sectors leaking around ships
+        - Raycasts of camera blocks, building and bullets missing terrain
+        - Slow planet loading, slow terrain on 4096 pixel heightmaps
+        - Bots waiting long for their paths in mountains
+
+        Planet terrain is computed in managed code, faster and more precise than the game's native code.
+
+        On huge planets also turn on Fix texture pixelation and Disable distance spherize, and Raise planet size limit for planets over 8000 km.
+        Also optional: vegetation placement, slope detail and terrain LOD ranges.
+    </Description>
+
+    <!-- Only source code in the Directory entries listed in SourceDirectories is compiled. Exclude any test projects or similar. -->
+    <SourceDirectories>
+        <Directory>ClientPlugin</Directory>
+    </SourceDirectories>
+    
+    <!-- The current plugin version's commit hash -->
+    <Commit>HEAD</Commit>
+</PluginData>

@@ -1,0 +1,3 @@
+[*.cs]
+# Harmony injects fields as ___<exact field name>, so ___ names follow the game's fields (m_camelCase)
+resharper_csharp_naming_rule.parameters = aaBb, __+aaBb, ___+aaBb, ___m_+aaBb
